@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Dark Fancy Theme */
+
+QWidget {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: &quot;Poppins&quot;, &quot;Montserrat&quot;, &quot;Segoe UI&quot;, sans-serif;
+    font-size: 12pt;
+}
+
+QMainWindow {
+    background-color: #121212;
+}
+
+QMenuBar {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border-bottom: 1px solid #292929;
+    font-family: &quot;Poppins&quot;, sans-serif;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 5px 15px;
+}
+
+QMenuBar::item:selected {
+    background: #333;
+    border-radius: 5px;
+}
+
+QMenu {
+    background-color: #1E1E1E;
+    border: 1px solid #292929;
+    font-family: &quot;Montserrat&quot;, sans-serif;
+}
+
+QMenu::item {
+    padding: 8px 25px;
+}
+
+QMenu::item:selected {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+QPushButton {
+    background-color: #2A2A2A;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: &quot;Poppins&quot;, sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+QPushButton:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+QPushButton:pressed {
+    background-color: #666;
+    transform: scale(0.95);
+}
+
+QLineEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 5px;
+    color: #E0E0E0;
+    font-family: &quot;Montserrat&quot;, sans-serif;
+}
+
+QTextEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #E0E0E0;
+    font-family: &quot;Montserrat&quot;, sans-serif;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #1E1E1E;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #555;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QStatusBar {
+    background-color: #1E1E1E;
+    border-top: 1px solid #292929;
+    font-family: &quot;Poppins&quot;, sans-serif;
+}
+
+QComboBox {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 5px;
+    color: #E0E0E0;
+    font-family: &quot;Montserrat&quot;, sans-serif;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #1E1E1E;
+    selection-background-color: #444;
+    border: 1px solid #333;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>258</x>
+     <y>70</y>
+     <width>281</width>
+     <height>207</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QPushButton" name="join_btn">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Join</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt; font-weight:700; color:#26a269;&quot;&gt;Enter A Party!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#26a269;&quot;&gt;Or Create A Party&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="sessionid_input">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Session ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="password_input">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="create_btn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>290</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
